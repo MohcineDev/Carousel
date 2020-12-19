@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .btn {
+        @apply absolute transition duration-300 p-5 bg-gray-800 opacity-50 hover:opacity-100 cursor-pointer;
+    }
+}
+
+@layer utilities {
+    #prev, #next {
+        border: 2px solid #ddd;
+        font-size: 20px;
+    }
+    #prev {
+        left: 5%;
+    }
+    #next {
+        right: 5%;
+    }
+    #prev::after, #next::after {
+        content: "";
+        border: 15px solid;
+        box-sizing: border-box;
+        border-color: white transparent transparent transparent;
+        z-index: 10;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 4px;
+    }
+    #prev::after {
+        transform: rotate(90deg);
+        left: -5px;
+    }
+    #next::after {
+        transform: rotate(-90deg);
+        right: -5px;
+    }
+}

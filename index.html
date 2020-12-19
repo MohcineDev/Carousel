@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/dist/style.css">
+    <title>Carousel</title>
+  
+</head>
+
+<body class="bg-gray-600">
+    <div class="container relative mx-auto my-4 w-9/12">
+        <div class="overflow-x-hidden">
+
+            <div class="slider grid grid-cols-slide">
+                <div class="img pl-1" id="first">
+                    <img class="w-full max-w-none" src="imgs/1.jpg" alt="">
+                </div>
+                <div class="img pl-1">
+                    <img class="w-full max-w-none" src="imgs/2.jpg" alt="">
+                </div>
+                <div class="img pl-1">
+                    <img class="w-full max-w-none" src="imgs/3.jpg" alt="">
+                </div>
+                <div class="img pl-1">
+                    <img class="w-full max-w-none" src="imgs/4.jpg" alt="">
+                </div>
+                <div class="img pl-1">
+                    <img class="w-full max-w-none" src="imgs/1.jpg" alt="">
+                </div>
+                <div class="img pl-1" id="last">
+                    <img class="w-full max-w-none" src="imgs/2.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="absolute w-full h-14 top-1/2 transform -translate-y-1/2 ">
+            <button id="prev" class="btn rounded-md"></button>
+            <button id="next" class="btn rounded-md"></button>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
